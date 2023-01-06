@@ -1,0 +1,31 @@
+.container {
+    background-color: white;
+    max-width: 100%;
+    padding: 4px 100px;
+    border-bottom: 0.5px solid #CFD8DC;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    vertical-align: middle;
+}
+
+.image {
+    margin: auto 72px auto 0px;
+}
+
+.item {
+    margin: 0px 3px;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 10px;
+    border-radius: 16px;
+}
+
+.item:hover{
+    color: white;
+    background-color: black;
+}

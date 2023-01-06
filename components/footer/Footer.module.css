@@ -1,0 +1,6 @@
+.overline {
+    font-size: 10px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+}
