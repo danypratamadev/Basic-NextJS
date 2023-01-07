@@ -1,7 +1,19 @@
+import { ReactElement } from "react";
 import Layout from "../../components/Layout";
+import { NextPageWithLayout } from "../_app";
 
-export default function TVAV() {
+const Page: NextPageWithLayout = () => {
   return (
     <div>TV & AV Page</div>
   )
 }
+
+Page.getLayout = function getLayout(page: ReactElement) {
+  return (
+    <Layout pageTitle="TV & AV">
+      {page}
+    </Layout>
+  )
+}
+
+export default Page

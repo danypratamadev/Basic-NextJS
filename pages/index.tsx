@@ -1,7 +1,23 @@
-import Layout from "../components/Layout";
+import { ReactElement } from 'react'
+import type { NextPageWithLayout } from './_app'
+import Layout from '../components/Layout'
+import Image from 'next/image'
 
-export default function Home() {
+const Page: NextPageWithLayout = () => {
   return (
-    <div>Home Page</div>
-  );
+    <>
+      <Image src="/images/sckdk.png" width={1125} height={2436} alt="logo"/>
+      <div>Home Page</div>
+    </>
+  )
 }
+
+Page.getLayout = function getLayout(page: ReactElement) {
+  return (
+    <Layout pageTitle='Home Page'>
+      {page}
+    </Layout>
+  )
+}
+
+export default Page

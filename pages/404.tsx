@@ -1,14 +1,16 @@
-import React, { useEffect } from 'react'
+import React, { ReactElement, useEffect } from 'react'
+import { NextPageWithLayout } from './_app'
+import Layout from '../components/404Layout'
 import router from 'next/router'
 
-export default function Custom404() {
+const Page: NextPageWithLayout = () => {
 
   useEffect(() => {
     setTimeout(() => {
       router.push('/')
     }, 2000)
   }, [])
-
+  
   return (
     <div className='container404'>
         <div className='title404'>404</div>
@@ -16,3 +18,13 @@ export default function Custom404() {
     </div>
   )
 }
+
+Page.getLayout = function getLayout(page: ReactElement) {
+  return (
+    <Layout>
+      {page}
+    </Layout>
+  )
+}
+
+export default Page
