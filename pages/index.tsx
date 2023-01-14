@@ -6,7 +6,6 @@ import Image from 'next/image'
 const Page: NextPageWithLayout = () => {
   return (
     <>
-      <Image src="/images/sckdk.png" width={1125} height={2436} alt="logo"/>
       <div>Home Page</div>
     </>
   )

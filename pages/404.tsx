@@ -14,7 +14,7 @@ const Page: NextPageWithLayout = () => {
   return (
     <div className='container404'>
         <div className='title404'>404</div>
-        <div className='subtitle404'>Halaman yang anda tuju tidak tersedia!</div>
+        <div className='subtitle404'>Page Not Found</div>
     </div>
   )
 }
